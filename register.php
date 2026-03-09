@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
-    <title>UM:CCE | Sign In</title>
+    <title>UM:CCE | Sign Up</title>
 </head>
 <body>
     <div class="limiter">
@@ -22,11 +22,24 @@
                 <br>
                 <h2>Login to your Account</h2>
                 <span class="welcome-back">
-                    Welcome Back!
+                    Create your Account
                 </span>
 
                 <div>
+                    <button type="submit" class="signup-btn">
+                        <span class="symbol">
+                            <img src="images/search.png" alt="Google Icon">
+                        </span>
+                        Sign Up with Google
+                    </button>
+                </div>
+
+                <div>
                     <input class="email-input-block" type="text" name="email" placeholder="Email Address" required>
+                </div>
+
+                <div>
+                    <input class="contact-input-block" type="text" name="contact" placeholder="Contact Number" required>
                 </div>
 
                 <div>
@@ -35,20 +48,7 @@
 
                 <div>
                     <button type="submit" class="login-btn">
-                        Login
-                    </button>
-                </div>
-
-                <div>
-                    <button type="submit" class="signup-btn">
-                        Create an Account
-                    </button>
-                    <br>
-                    <button type="submit" class="signup-btn">
-                        <span class="symbol">
-                            <img src="images/search.png" alt="Google Icon">
-                        </span>
-                        Sign In with Google
+                        Register
                     </button>
                 </div>
             </form>
