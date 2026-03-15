@@ -15,18 +15,30 @@
     <div class="limiter">
         <!-- LEFT SIDE -->
         <div class="left">
+            <?php
+            session_start();
+            if (isset($_SESSION['error'])) {
+                echo "<div style='background: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; margin: 20px 0; margin-right: 60%; border-left: 4px solid #f5c6cb; font-family: Inter;'>" . htmlspecialchars($_SESSION['error']) . "</div>";
+                unset($_SESSION['error']);
+            }
+            if (isset($_SESSION['message'])) {
+                echo "<div style='background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin: 20px 0; margin-right: 60%; border-left: 4px solid #28a745; font-family: Inter;'>" . htmlspecialchars($_SESSION['message']) . "</div>";
+                unset($_SESSION['message']);
+            }
+            ?>
             <form class="login" action="formhandler.php" method="POST">
+                <input type="hidden" name="action" value="register">
                 <span class="Logo">
                     <img src="images/logo.png" alt="Logo">
                 </span>
                 <br>
-                <h2>Login to your Account</h2>
+                <h2>Create your Account</h2>
                 <span class="welcome-back">
-                    Create your Account
+                    Join us today!
                 </span>
 
                 <div>
-                    <button type="submit" class="signup-btn">
+                    <button type="button" class="signup-btn" onclick="alert('Google Sign Up - Coming soon!')">
                         <span class="symbol">
                             <img src="images/search.png" alt="Google Icon">
                         </span>
@@ -50,6 +62,10 @@
                     <button type="submit" class="login-btn">
                         Register
                     </button>
+                </div>
+                
+                <div>
+                    <a href="login.php" class="signup-btn">Already have an account?</a>
                 </div>
             </form>
         </div>

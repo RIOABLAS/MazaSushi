@@ -70,13 +70,14 @@ body {
 
 .signup-btn {
     padding: 25px;
-    margin-bottom: 3px;
+    margin-bottom: 50px;
     border: none;
     background: #fff;
     color: black;
     border-radius: 20px;
     cursor: pointer;
     width: 90%;
+    font-family: "Inter";
 
     display: flex;
     align-items: center;
